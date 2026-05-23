@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvaro Núñez — Junior Data Engineer & Backend Developer</title>
+    <meta name="description"
+        content="Recién graduado construyendo bases sólidas. Diseñando arquitecturas escalables, procesamiento eficiente y soluciones backend.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-zinc-900 antialiased">
+
+    <main>
+        <section id="hero" class="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 py-24">
+            <div class="max-w-5xl">
+                <h1
+                    class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-900 leading-[1.1] mb-8">
+                    Álvaro Núñez.<br>
+                    Junior Data Engineer.
+                </h1>
+                <p class="text-lg md:text-xl text-zinc-500 font-normal leading-relaxed max-w-3xl mb-12">
+                    Diseñando arquitecturas escalables, procesamiento de datos eficiente y soluciones backend robustas.
+                </p>
+                <div class="flex items-center gap-10">
+                    <a href="#proyectos"
+                        class="text-base font-medium text-zinc-900 hover:underline underline-offset-4 decoration-1 decoration-zinc-900 transition-all duration-200">
+                        Ver Proyectos
+                    </a>
+                    <a href="https://github.com/alvaront99" target="_blank" rel="noopener noreferrer"
+                        class="text-base font-medium text-zinc-900 hover:underline underline-offset-4 decoration-1 decoration-zinc-900 transition-all duration-200">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="px-8 md:px-16 lg:px-24 py-32 md:py-40 border-t border-zinc-200">
+            <div class="max-w-5xl">
+                <p class="text-2xl md:text-3xl lg:text-4xl font-medium text-zinc-900 leading-snug tracking-tight">
+                    Mi interés por la ingeniería de datos nace de una sólida base en analítica de negocio. Me motiva
+                    transformar datos en soluciones útiles, combinando visión estratégica y aprendizaje continuo en
+                    tecnologías de procesamiento y arquitectura de datos.
+                </p>
+            </div>
+        </section>
+
+        <section id="stack" class="px-8 md:px-16 lg:px-24 py-32 md:py-40 border-t border-zinc-200">
+            <div class="max-w-5xl">
+                <h2 class="text-sm font-semibold text-zinc-400 uppercase tracking-widest mb-16">Stack Tecnológico</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+
+                    <div>
+                        <h3 class="text-base font-semibold text-zinc-900 mb-4">Cloud & Infraestructura</h3>
+                        <ul class="text-base text-zinc-500 leading-relaxed space-y-1">
+                            <li>AWS (S3, Glue, EMR, Athena, DataBrew)</li>
+                            <li>IaC / Consola AWS</li>
+                            <li>Ubuntu (WSL2) & Git</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-base font-semibold text-zinc-900 mb-4">Ingesta & Procesamiento</h3>
+                        <ul class="text-base text-zinc-500 leading-relaxed space-y-1">
+                            <li>Apache Spark (PySpark)</li>
+                            <li>Python</li>
+                            <li>Arquitectura ETL / ELT</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-base font-semibold text-zinc-900 mb-4">Backend & Bases de Datos</h3>
+                        <ul class="text-base text-zinc-500 leading-relaxed space-y-1">
+                            <li>Java & Spring Boot</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-base font-semibold text-zinc-900 mb-4">Visualización & ML</h3>
+                        <ul class="text-base text-zinc-500 leading-relaxed space-y-1">
+                            <li>Power BI (DAX)</li>
+                            <li>Streamlit</li>
+                            <li>PySide6 (Qt for Python)</li>
+                            <li>Scikit-Learn</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="proyectos" class="px-8 md:px-16 lg:px-24 py-32 md:py-40 border-t border-zinc-200">
+            <div class="max-w-5xl">
+                <h2 class="text-sm font-semibold text-zinc-400 uppercase tracking-widest mb-16">Proyectos Destacados
+                </h2>
+
+                <article class="border-t border-zinc-200 pt-8 pb-12">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-zinc-900 tracking-tight mb-2">Arquitectura ELT
+                                para monitorización y visualización meteorológica</h3>
+                            <p class="text-base text-zinc-500 leading-relaxed mb-4 max-w-2xl">Diseño end-to-end de un
+                                flujo de datos simulado. Implementación de arquitectura ELT basada en patrones Lambda
+                                orientada al procesamiento eficiente frente a esquemas transaccionales tradicionales.
+                            </p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="text-xs font-medium text-zinc-400">Spark</span>
+                                <span class="text-xs font-medium text-zinc-400">PostgreSQL</span>
+                                <span class="text-xs font-medium text-zinc-400">Java</span>
+                                <span class="text-xs font-medium text-zinc-400">Spring Boot</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/alvaront99/Arquitectura-ELT" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm font-medium text-zinc-900 hover:underline underline-offset-4 decoration-1 decoration-zinc-900 transition-all duration-200 md:mt-2 md:shrink-0">
+                            Ver arquitectura en GitHub ->
+                        </a>
+                    </div>
+                </article>
+
+                <article class="border-t border-zinc-200 pt-8 pb-12">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-zinc-900 tracking-tight mb-2">Arquitectura
+                                Cloud para Análisis de F1 en AWS</h3>
+                            <p class="text-base text-zinc-500 leading-relaxed mb-4 max-w-2xl">Ciclo de vida del dato en
+                                la nube. Evolución de clusters EMR hacia arquitecturas gestionadas y optimización de
+                                costes (FinOps) con políticas de ciclo de vida en S3.</p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="text-xs font-medium text-zinc-400">AWS S3 & Glue</span>
+                                <span class="text-xs font-medium text-zinc-400">PySpark</span>
+                                <span class="text-xs font-medium text-zinc-400">Power BI</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/alvaront99/aws-pyspark-f1-analytics" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm font-medium text-zinc-900 hover:underline underline-offset-4 decoration-1 decoration-zinc-900 transition-all duration-200 md:mt-2 md:shrink-0">
+                            Ver arquitectura en GitHub ->
+                        </a>
+                    </div>
+                </article>
+
+                <article class="border-t border-zinc-200 pt-8 pb-8">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold text-zinc-900 tracking-tight mb-2">Optimización del
+                                LTV y Predicción de Churn</h3>
+                            <p class="text-base text-zinc-500 leading-relaxed mb-4 max-w-2xl">Desarrollo y serialización
+                                de un modelo predictivo de regresión logística para identificar fuga de clientes en el
+                                sector telecomunicaciones con una exactitud del 81%.</p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="text-xs font-medium text-zinc-400">Python</span>
+                                <span class="text-xs font-medium text-zinc-400">Scikit-Learn</span>
+                                <span class="text-xs font-medium text-zinc-400">Pandas</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/alvaront99/machine-learning-for-churn-and-LTV" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm font-medium text-zinc-900 hover:underline underline-offset-4 decoration-1 decoration-zinc-900 transition-all duration-200 md:mt-2 md:shrink-0">
+                            Ver modelo en GitHub ->
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-950 text-white px-8 md:px-16 lg:px-24 py-12">
+        <div class="max-w-5xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <p class="text-sm text-zinc-400">Álvaro Núñez</p>
+            <div class="flex items-center gap-8">
+                <a href="https://linkedin.com/in/alvaro-nuñez-9b1b2b241" target="_blank" rel="noopener noreferrer"
+                    class="text-sm font-medium text-white hover:underline underline-offset-4 decoration-1 decoration-white transition-all duration-200">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
